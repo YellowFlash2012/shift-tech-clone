@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.container {
+
+}
+
+header {
+    background-color: #5b41c8;
+    
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    width: 70vw;
+    margin: 0em auto;
+}
+
+div.logo {
+    background-color: #fff;
+    color: #5b41c8;
+    font-weight: bolder;
+    font-size: 1.5em;
+
+    width: 7.5rem;
+    height: 7.5rem;
+    padding-top: 3.5em;
+    padding-left: 0.6em;
+}
+
+div.nav-links ul.main-menu {
+    display: flex;
+    margin-top: 3.2em;
+
+    position: relative;
+}
+
+ul.main-menu li {
+    margin: 0 1.1em;
+    padding: 0.5em 0;
+
+}
+
+ul.main-menu a {
+    font-weight: bold;
+}
+
+div.nav-links a {
+    color: #fff;
+}
+
+i.fas {
+    color: #fff;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul.pro-submenu,
+ul.sol-submenu,
+ul.comp-submenu,
+ul.lang-submenu {
+    display: none;
+
+    position: absolute;
+}
+
+/* products sub menu */
+ul.main-menu li:nth-of-type(1):hover ul.pro-submenu {
+    display: block;
+}
+
+ul.pro-submenu {
+    left: 0em;
+    top: 1.9em;
+}
+
+ul.pro-submenu li {
+    background-color: #fff;
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #efefef;
+}
+
+ul.pro-submenu a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+ul.pro-submenu a:hover {
+    color: #5b41c8;
+}
+
+ul.pro-submenu svg {
+    float: right;
+    color: #000;
+}
+
+/* solutions sub menu */
+ul.main-menu li:nth-of-type(2):hover ul.sol-submenu {
+    display: block;
+}
+
+ul.sol-submenu {
+    left: 7.5em;
+    top: 1.5em;
+}
+
+ul.sol-submenu li {
+    background-color: #fff;
+    width: 20em;
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #efefef;
+}
+
+ul.sol-submenu a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+ul.sol-submenu a:hover {
+    color: #5b41c8;
+}
+
+ul.sol-submenu svg {
+    float: right;
+    color: #000;
+}
+
+div.mobile-menu {
+    display: none;
+}
+
+/* media query */
+
+@media screen and (max-width: 1440px) {
+    ul.main-menu i.fa-angle-down {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    div.nav-links {
+        display: none;
+    }
+
+    div.mobile-menu {
+        display: block;
+        margin-top: 3em;
+        
+    }
+}
