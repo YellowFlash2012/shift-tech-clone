@@ -8,6 +8,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body.dark {
+    background-color: #000;
+    color: #fff !important;
+}
+
 div.container {
 
 }
@@ -44,7 +49,7 @@ div.nav-links ul.main-menu {
     position: relative;
 }
 
-ul.main-menu li {
+ul.main-menu > li {
     margin: 0 1.1em;
     padding: 0.5em 0;
 
@@ -69,6 +74,10 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+svg.dark-light {
+    cursor: pointer;
 }
 
 ul.pro-submenu,
@@ -117,7 +126,7 @@ ul.main-menu li:nth-of-type(2):hover ul.sol-submenu {
 
 ul.sol-submenu {
     left: 7.5em;
-    top: 1.5em;
+    top: 1.9em;
 }
 
 ul.sol-submenu li {
@@ -141,9 +150,240 @@ ul.sol-submenu svg {
     color: #000;
 }
 
+/* company sub menu */
+ul.main-menu li:nth-of-type(6):hover ul.comp-submenu {
+    display: block;
+}
+
+ul.comp-submenu {
+    left: 40.3em;
+    top: 1.9em;
+}
+
+ul.comp-submenu li {
+    background-color: #fff;
+    width: 15em;
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #efefef;
+}
+
+ul.comp-submenu a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+ul.comp-submenu a:hover {
+    color: #5b41c8;
+}
+
+ul.comp-submenu svg {
+    float: right;
+    color: #000;
+}
+
+/* language sub menu */
+ul.main-menu li:nth-of-type(7):hover ul.lang-submenu {
+    display: block;
+}
+
+ul.lang-submenu {
+    left: 47.8em;
+    top: 1.9em;
+}
+
+ul.lang-submenu li {
+    background-color: #fff;
+    width: 12em;
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #efefef;
+}
+
+ul.lang-submenu a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+ul.lang-submenu a:hover {
+    color: #5b41c8;
+}
+
+ul.lang-submenu i {
+    float: right;
+    color: #000;
+}
+
 div.mobile-menu {
     display: none;
 }
+
+/* main section */
+
+section.section-one {
+    background-color: #5b41c8;
+    height: 80vh;
+}
+
+div.section-one-container {
+    width: 84rem;
+    
+    margin: 0 auto;
+
+    display: flex;
+
+    
+}
+
+div.s1-info {
+    
+    margin: 8em 0;
+    
+}
+
+div.s1-info h2 {
+    color: #fff;
+    font-size: 3rem;
+    
+}
+
+div.s1-info p {
+    margin: 2em 0;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+a#contact {
+    text-transform: uppercase;
+    color: #5b41c8;
+    background-color: #fff;
+    padding: 1.5em 3em;
+    font-weight: bold;
+
+    position: relative;
+}
+
+a#contact svg {
+    position: absolute;
+    top: 1.2em;
+}
+
+a#contact:hover svg {
+    transform: translateX(1.5px);
+}
+
+a#blog {
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 2em;
+    border: 0.5px solid gray;
+    padding: 1.5em 3em;
+    font-weight: bold;
+    position: relative;
+}
+
+a#blog svg {
+    position: absolute;
+    top: 1.2em;
+    right: 0.5em;
+
+}
+
+a#blog:hover svg {
+    transform: translateX(1.5px);
+}
+
+div.logo-slider {
+    width: 920px;
+    height: 128px;
+
+    background-color: #fff;
+    margin-top: 2.1em;
+
+}
+
+img.company-logo {
+    width: 108px;
+    height: 50px;
+    float: right;
+    margin-right: 1em;
+    margin-top: 1.5em;
+}
+
+/* section #2 */
+
+div.s2-container {
+    margin-top: 5rem;
+    margin-left: 18rem;
+
+    display: flex;
+    width: 3900px;
+}
+
+div.slide {
+    border: 1px solid #000;
+    position: relative;
+
+    width: 290px;
+    height: 304px;
+
+    margin-right: 3rem;
+}
+
+div.slide:hover .face-1 {
+    opacity: 0;
+}
+
+div.slide:hover .face-2 {
+    opacity: 1;
+}
+
+div.face-1 {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.face-1 img {
+    width: 128px;
+    height: 128px;
+    
+    margin-top: 1rem;
+
+    margin-left: 9rem;
+}
+
+div.face-1 h5 {
+    color: #5b41c8;
+    margin: 0.5em 0;
+    padding-left: 1em;
+
+    font-size: 2rem;
+}
+
+div.face-1 p {
+    font-size: 1.5rem;
+    padding-left: 0.6em;
+}
+
+div.face-2 {
+    background-color: #5b41c8;
+    color: #fff;
+
+    width: 100%;
+    height: 100%;
+
+    padding-top: 10rem;
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
+
+    position: absolute;
+    opacity: 0;
+
+    font-size: 1.5rem;
+}
+
 
 /* media query */
 
