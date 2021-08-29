@@ -314,10 +314,13 @@ img.company-logo {
 
 div.s2-container {
     margin-top: 5rem;
+    margin-bottom: 5rem;
     margin-left: 18rem;
 
     display: flex;
     width: 3900px;
+
+    position: relative;
 }
 
 div.slide {
@@ -336,6 +339,12 @@ div.slide:hover .face-1 {
 
 div.slide:hover .face-2 {
     opacity: 1;
+}
+
+div.slide:hover i.fa-chevron-left,
+div.slide:hover i.fa-chevron-right {
+    visibility: visible;
+    
 }
 
 div.face-1 {
@@ -382,6 +391,91 @@ div.face-2 {
     opacity: 0;
 
     font-size: 1.5rem;
+}
+
+    
+
+i.fa-chevron-left {
+    cursor: pointer;
+    position: absolute;
+    top: 7.2rem;
+    left: -2rem;
+    background: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #000;
+
+    height: 4rem;
+    width: 4rem;
+
+    border: 0;
+    outline: none;
+    z-index: 2;
+    visibility: hidden;
+}
+
+i.fa-chevron-right {
+    cursor: pointer;
+    position: absolute;
+    top: 7.2rem;
+    left: 94rem;
+    background: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #000;
+
+    height: 4rem;
+    width: 4rem;
+
+    border: 0;
+    outline: none;
+    z-index: 2;
+    visibility: hidden;
+}
+
+/* section #3 */
+div.s3-container {
+    background-image: url(assets/world-map.png);
+    background-size: 600px 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    width: 84rem;
+
+    margin: 0 auto;
+    
+}
+
+div.s3-info {
+    
+
+}
+
+div.s3-info h2 {
+    font-size: 3.5rem;
+}
+
+div.s3-info p {
+    margin: 1rem 0;
+
+    font-size: 1.6rem;
+}
+
+div.s3-info a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+div.s3-info svg {
+    margin-left: 0.4em;
 }
 
 
